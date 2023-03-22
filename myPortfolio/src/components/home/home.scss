@@ -3,8 +3,27 @@
 .mainContainer{
     width: 100vw;
     height: 100vh;
-    background-color: $main_color;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+    margin-left: 20px;
+  
+    &--pageHeader{
+       margin-bottom: 60px;
+    }
+    
+    &--projects{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        margin-top: 60px;
+        &__title{
+            align-self: flex-start;
+            font-size: 40px;
+            color: $secondary_color;
+        }
+    }
+    &--experience{
+        margin-top: 50px;
+    }
+   
 }
+

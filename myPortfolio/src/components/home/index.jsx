@@ -8,11 +8,21 @@ export const Home = () => {
 
     return(
         <main className="mainContainer">
-           <Pageheader/>
-           <AboutMe/>
-           <Experience/>
-           <Projects/>
-
+            <div className='mainContainer--pageHeader'>
+                <Pageheader/>
+            </div>
+            <div className='mainContainer--about'>
+                <AboutMe/>
+            </div>
+            <div className='mainContainer--experience'>
+                <Experience/>
+            </div>
+           
+           <div className='mainContainer--projects'>
+           <h4 className='mainContainer--projects__title'>My projects</h4>
+                <Projects/>
+           </div>
+           
         </main>
     )
 }

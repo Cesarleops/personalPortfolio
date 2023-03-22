@@ -1,4 +1,4 @@
-
+import './tabNav.scss'
 export const TabSelector = ({id, activeTab, setActiveTab, name}) => {
 
     const selectTab = () => {

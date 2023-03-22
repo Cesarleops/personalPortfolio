@@ -3,10 +3,9 @@ export const AboutMe = () => {
 
     return(
         <section className="aboutSection">
-            <p>I'm currently studying Software engineering at Universidad Nacional de Colombia in Medellin.
-               Also I have been working as a part-time front-end developer at Umoob, an Start Up from the fitness industry.
-
-               Besides studies and work I spend most of my time reading novels and books related with space, and I like to play games.
+            <h2 className='aboutSection--title'>Some things about me</h2>
+            <p className='aboutSection--info'>I'm currently studying software engineering at Universidad Nacional in Medellin, and I've been working as a volunteer front-end developer at Umoob, a fitness Start Up. I really enjoy working as a member of a team, I like to share ideas and work with a common objective, I enjoy solving problems and learning new things constantly.
+                Besides of work and studies I like to read novels and books related with space, I also like to play a lot of games.
              </p>
         </section>
     )

@@ -1,35 +1,115 @@
-
-.slideShow{
-    position: relative;
-}
-.slides{
+@import '../../variables.scss';
+.carouselContainer{
+   position: relative;
+   
+   &--indicators{
     display: flex;
-    background-color: red;
-    min-width: 100%;
+    justify-content: center;
+    gap: 10px;
+   }
+   
+ 
+
+ 
 }
 
-.buttons{
+.slideShowContainer{
+    display: flex;
+    max-width: 600px;
+
+    border-radius: 10px;
+    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
+
+}
+
+.slide{
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    min-width: 100%;
+    position: relative;
+    align-items: center;
+    z-index: 10;   
+    overflow: hidden;
+    transition: .3s ease all;
+    &--title{
+        display: flex;
+        justify-content: center;
+    }
+    &--desc{
+        max-width: 500px;
+    }
+    &--list{
+        display: flex;
+        gap: 10px;
+    }
+}
+
+.controls{
     position: absolute;
     top: 0;
+    z-index: 20;
+    pointer-events: none;
     width: 100%;
     height: 100%;
-    z-index: 1;
-    &--right{
-        border: none;
+   
+    &--left{
+        pointer-events: all;
         background: none;
+        border: none;
+        cursor: pointer;
+        height: 79%;
+        left: 0;
         position: absolute;
+        transition: .3s ease all;
+        color: $secondary_color;
+        &:hover{
+            background: rgba(0,0,0,.2);
+        }
+        svg{
+            height: 30px;
+            width: 30px;
+        }
+    }
+
+    &--right{
+        pointer-events: all;
+        color: $secondary_color;
+        background: none;
+        border: none;
+        height: 79%;
+        cursor: pointer;
         right: 0;
-        height: 100%;
-        width: 60px;
-        
+        position: absolute;
+        transition: .3s ease all;
+        &:hover{
+            background: rgba(0,0,0,.2);
+        }
+        svg{
+            width: 30px;
+            height: 30px;
+        }
+
 
     }
-    &--left{
-        border: none;
-        background: none;
-        position: absolute;
-        left:0;
-        height: 100%;
-        width: 60px;
+   
+    
+
+}
+
+.current{
+   color: $secondary_color;
+}
+
+
+.gitIcon{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    &--icon{
+        width: 30px;
+        height: 30px;
+        color: $secondary_color;
     }
+   
 }
