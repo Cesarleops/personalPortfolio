@@ -1,13 +1,12 @@
-
-.fadeSection{
+.fadeExperience{
     opacity: 0;
-    transform: translateX(-10vh);
+    transform: translateY(10vh);
     visibility: hidden;
     transition:  0.7s ease-in;
     will-change: opacity, visibility;
 }
 
-.fadeSection.showing {
+.fadeExperience.showingE {
     opacity: 1;
     transform: none;
     visibility: visible;

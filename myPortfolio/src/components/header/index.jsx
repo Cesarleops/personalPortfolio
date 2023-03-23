@@ -1,4 +1,5 @@
-import {AiOutlineMail} from 'react-icons/ai'
+import {AiOutlineMail,AiFillGithub, AiFillLinkedin} from 'react-icons/ai'
+
 import './header.scss'
 export const Pageheader = () => {
     return( 
@@ -10,10 +11,16 @@ export const Pageheader = () => {
 
         <section>
             <h5 className='header--subtitle'>I enjoy building cool and helpful stuff</h5>
-            <button className='header--button'>
-            <AiOutlineMail className='header--button__icon'/>
-                <p className='header--button__icon__text'>Get in touch!</p>
-            </button>
+            <section className='links'>
+                <button className='header--button'>
+                <AiOutlineMail className='header--button__icon'/>
+                    <a href='mailto:cesarleyton549@gmail.com' className='header--button__icon__text'>Get in touch!</a>
+                </button>
+                <a><AiFillGithub className='header--button__icon__git' /></a>
+                <a><AiFillLinkedin className='header--button__icon__linkedin'/></a>
+            </section>
+           
+          
         </section>
     </section>)
 }

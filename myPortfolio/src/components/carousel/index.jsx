@@ -22,12 +22,11 @@ const myProjects = {
           demo: ""
 
       },
-      Sendy: {
-          title: "Sendy",
+      Umoob: {
+          title: "Umoob",
           desc: "A group chat application where you can talk to any person that joins the room",
-          stack: ["Typescript", "React", "Redux" ,"Sass", "Express","MongoDB"],
+          stack: ["Typescript", "Python", "React", "Redux" ,"Sass", "Django"],
           image: "",
-          gitHub: "https://github.com/Cesarleops/ovtouch_frontend",
           demo: ""
   
           }

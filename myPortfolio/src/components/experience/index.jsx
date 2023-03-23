@@ -3,6 +3,7 @@ import { useState } from 'react'
 import { TabSelector } from '../tabNav'
 import './experience.scss'
 import { TabsContent } from '../tabs'
+import { Fade } from '../fade'
 export const Experience = () => {
     const stack = ["Javascript", "Typescript", "Python", "React JS", "Express", "Redux", "SASS", "MongoDB", "PostgreSql","Axios"]
     const [activeTab, setActiveTab] = useState('college')
@@ -15,14 +16,18 @@ export const Experience = () => {
                 <TabSelector id="umoob" name={"Umoob"} activeTab={activeTab} setActiveTab={setActiveTab}/>
                 <TabSelector id="henry"  name={"Henry"} activeTab={activeTab} setActiveTab={setActiveTab}/>
             </ul>
-
+          
             <section className='contents'>
                 <TabsContent id={"college"} activeTab={activeTab}>
+
                     <p className='contents--text'>
                     <span><TbPlaystationCircle className='contents--text__icon'/></span>Collaborated with other students in the research groups of computational science and data analysis that belong to the university, where I have been able to develop my problem solving and communication skills. 
                     </p>
+
+                   
                 </TabsContent>
                 <TabsContent id={"umoob"} activeTab={activeTab}>
+                  
                     <p className='contents--text'>
                          <span><TbPlaystationCircle className='contents--text__icon'/></span>Developing responsive and reusable components with React+Typescript based on Figma designs.
                     </p>
@@ -46,10 +51,12 @@ export const Experience = () => {
                     </p>
                 </TabsContent>
             </section>
+          
+         
             </div>
          
-
-            <section className='stackSection' >
+        <Fade>
+        <section className='stackSection' >
                 <h4 className='stackSection--title'>My Current Stack</h4>
                 <div className='stack'>
                 <ul className='stackList'>
@@ -62,6 +69,8 @@ export const Experience = () => {
                 </div>
             
             </section>
+        </Fade>
+        
          
         </main>
     )
