@@ -5,7 +5,7 @@ import './experience.scss'
 import { TabsContent } from '../tabs'
 import { Fade } from '../fade'
 export const Experience = () => {
-    const stack = ["Javascript", "Typescript", "Python", "React JS", "Express", "Redux", "SASS", "MongoDB", "PostgreSql","Axios"]
+    const stack = ["Javascript", "Typescript", "Python", "React JS", "Express", "Redux", "SASS", "MongoDB", "PostgreSql","React Native"]
     const [activeTab, setActiveTab] = useState('college')
     return(
         <main className='experienceContainer'>

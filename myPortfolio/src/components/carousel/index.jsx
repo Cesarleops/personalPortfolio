@@ -1,8 +1,9 @@
-import {BiChevronRight, BiChevronLeft, BiCircle} from 'react-icons/bi'
+import {BiChevronRight, BiChevronLeft, BiCircle,BiPlay} from 'react-icons/bi'
 import {BsCircleFill} from 'react-icons/bs'
 import {AiFillGithub} from 'react-icons/ai'
-import { useEffect, useRef, useState } from 'react'
+import {  useRef, useState } from 'react'
 import './carousel.scss'
+
 const myProjects = {
     AllGames: {
           title: "AllGames",
@@ -19,15 +20,15 @@ const myProjects = {
           stack: ["Javascript", "React", "Redux", "Bootstrap", "MongoDB", "MaterialUI", "Express"],
           image: "",
           gitHub: "https://github.com/Felipesch96/PF-H-Buy",
-          demo: ""
+          demo: "https://main.d2d0y3pf0pfssa.amplifyapp.com/"
 
       },
       Umoob: {
           title: "Umoob",
-          desc: "A group chat application where you can talk to any person that joins the room",
+          desc: "Umoob is a business management app and a marketplace focused on the fitness industry. I've worked as a front-end developer in several development cycles ",
           stack: ["Typescript", "Python", "React", "Redux" ,"Sass", "Django"],
-          image: "",
-          demo: ""
+          image: "../../assets/image1.jpg",
+          demo: "https://www.umoob.com/"
   
           }
 
@@ -86,7 +87,7 @@ export const Carousel = ({children}) => {
                   <div ref={slideShow} className='slideShowContainer'>
                     {
                         Object.keys(myProjects).map((key,i)=> (
-                            <div key={i} className='slide'>
+                            <div key={i} className='slide' style={{backgroundImage: myProjects[key]["image"] }}>
                                 <h4 className='slide--title'>{myProjects[key]["title"]}</h4>
                                 <p className='slide--desc'>{myProjects[key]["desc"]}</p>
                                 <ul className='slide--list'>
@@ -96,6 +97,9 @@ export const Carousel = ({children}) => {
                                 </ul>
                                 <a className='gitIcon' href={myProjects[key]["gitHub"]}>
                                     <AiFillGithub className='gitIcon--icon'/>
+                                </a>
+                                <a className='demoIcon' href={myProjects[key]["demo"]}>
+                                    <BiPlay className='demoIcon--icon'/>
                                 </a>
                             </div>
                         ))

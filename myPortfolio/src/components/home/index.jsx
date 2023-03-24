@@ -8,18 +8,25 @@ export const Home = () => {
 
     return(
         <main className="mainContainer">
+            <div className='mainContainer--navBar'>
+                <ul>
+                    <li><a href='#about'>About</a></li>
+                    <li><a href='#experience'>Experience</a></li>
+                    <li><a href='#projects'>Projects</a></li>
+                </ul>
+            </div>
             <div className='mainContainer--pageHeader'>
                 <Pageheader/>
             </div>
-            <div className='mainContainer--about'>
+            <div id='about' className='mainContainer--about'>
                 <AboutMe/>
             </div>
-            <div className='mainContainer--experience'>
+            <div id='experience' className='mainContainer--experience'>
                 <Experience/>
             </div>
            
-           <div className='mainContainer--projects'>
-           <h4 className='mainContainer--projects__title'>My projects</h4>
+           <div id='projects' className='mainContainer--projects'>
+           <h4  className='mainContainer--projects__title'>My projects</h4>
                 <Projects/>
            </div>
            

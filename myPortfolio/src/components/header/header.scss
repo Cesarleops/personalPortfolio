@@ -31,12 +31,20 @@
       &__git{
         width: 200px;
         height: 90px;
+        transition: .3s ease-in;
         color: $secondary_color;
+        &:hover{
+          color: white;
+        }
       }
       &__linkedin{
+        transition: .3s ease-in;
         width: 200px;
         height: 90px;
         color: $secondary_color;
+        &:hover{
+          color: white;
+        }
       }
       &__text{
         font-family: 'Sora';
@@ -61,3 +69,4 @@
   display: flex;
   gap: 80px;
 }
+

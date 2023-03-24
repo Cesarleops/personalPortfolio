@@ -106,10 +106,30 @@
     position: absolute;
     top: 30px;
     right: 30px;
+    transition: .3s ease-in;
     &--icon{
         width: 30px;
         height: 30px;
         color: $secondary_color;
+        &:hover{
+            color: white;
+        }
+    }
+   
+}
+
+.demoIcon{
+    position: absolute;
+    top: 30px;
+    right: 75px;
+    &--icon{
+        transition: .3s ease-in;
+        width: 30px;
+        height: 30px;
+        color: $secondary_color;
+        &:hover{
+            color: white;
+        }
     }
    
 }

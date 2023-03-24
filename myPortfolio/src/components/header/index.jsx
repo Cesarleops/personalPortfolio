@@ -16,8 +16,8 @@ export const Pageheader = () => {
                 <AiOutlineMail className='header--button__icon'/>
                     <a href='mailto:cesarleyton549@gmail.com' className='header--button__icon__text'>Get in touch!</a>
                 </button>
-                <a><AiFillGithub className='header--button__icon__git' /></a>
-                <a><AiFillLinkedin className='header--button__icon__linkedin'/></a>
+                <a href='https://github.com/Cesarleops'><AiFillGithub className='header--button__icon__git' /></a>
+                <a  href='https://www.linkedin.com/in/cesar-leyton-a5b879238/'><AiFillLinkedin className='header--button__icon__linkedin'/></a>
             </section>
            
           
