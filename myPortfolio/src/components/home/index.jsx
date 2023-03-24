@@ -5,7 +5,7 @@ import { Projects } from '../projects'
 import './home.scss'
 
 export const Home = () => {
-
+    
     return(
         <main className="mainContainer">
             <div className='mainContainer--navBar'>

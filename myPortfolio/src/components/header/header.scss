@@ -1,5 +1,6 @@
 @import '../../variables.scss';
 .header{
+    
     h4 {
      margin: 0;
      font-size: 80px;
@@ -11,6 +12,7 @@
   &--subtitle{
     font-size: 30px;
     color: white;
+
   }
   &--button{
     padding: 10px;
@@ -70,3 +72,32 @@
   gap: 80px;
 }
 
+
+
+@media (max-width: 600px){
+  .header{
+    margin-top: 60px;
+    width: 600px;
+    &--button{
+      height: 80px;
+      width: 150px;
+      &__icon{
+        &__git{
+          width: 100px;
+          height: 50px;
+        }
+        &__linkedin{
+          width: 100px;
+          height: 50px;
+        }
+      }
+    }
+  }
+  .links{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 8px;
+    margin-left: 35px;
+  }
+}

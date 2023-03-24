@@ -133,3 +133,35 @@
     }
    
 }
+
+@media (max-width: 600px){
+    .slide{
+        &--desc{
+            font-size: 25px;
+        }
+        &--title{
+            font-size: 35px;
+        }
+        &--list{
+            font-size: 20px;
+            color: $secondary_color;
+            flex-wrap: wrap;
+        }
+    }
+    .controls{
+        &--left{
+
+            &:hover{
+                background: none;
+           
+            }
+        }
+        &--right{
+            &:hover{
+
+                background: none;
+            }
+        }
+       
+    }
+}

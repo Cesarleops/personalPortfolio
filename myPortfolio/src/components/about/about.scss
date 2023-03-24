@@ -15,3 +15,24 @@
         color: $secondary_color;
     }
 }
+
+
+@media (max-width: 600px){
+    .aboutSection{
+   
+        max-width: 100%;
+        &--info{
+            display: flex;
+            justify-content: center;
+            margin: 0;
+            font-size: 30px;
+
+            min-width: 550px;
+            
+        }
+        &--title{
+            font-size: 40px;
+            color: $secondary_color;
+        }
+    }
+}

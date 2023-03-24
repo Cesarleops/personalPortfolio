@@ -37,10 +37,8 @@
 
 .stackList{
     display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    height: 100px;
-    gap: 30px;
+    justify-content: center;
+    gap: 25px;
     &--item{
       font-size: 20px;
     }
@@ -52,7 +50,6 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-
     width: 80%;
     margin-left: 50px;
 }
@@ -64,3 +61,66 @@
       color: $secondary_color;
     }
 }
+
+
+
+@media (max-width: 600px){
+  .experienceContainer{
+    width: 600px;
+  }
+  .contents{
+    display: flex;
+    justify-content: center;
+    height: 800px;
+    width: 85vw;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    padding: 30px;
+    border-radius: 10px;
+    margin-bottom: 130px;
+    &--text{
+      display: flex;
+      gap: 20px;
+      max-width: 700px;
+      margin-bottom: 5px;
+      &__icon{
+          color: $secondary_color
+  
+      }
+      
+      
+    }
+  
+  }
+  .stackList{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 500px;
+    gap: 40px;
+    &--item{
+      font-size: 30px;
+    }
+    &--title{
+      font-size: 40px;
+      color: $secondary_color;
+    }
+  }
+ 
+
+.contents--text{
+
+font-size: 25px;
+}
+
+  .tabList{
+    font-size: 25px;
+   }
+   .tabList.active{
+    transition: ease-in-out;
+    border-bottom: 2px solid $secondary_color;
+    &:hover{
+        color: $secondary_color;
+   }
+  }
+}
+
+

@@ -1,9 +1,20 @@
 
+.projects{
+    display: flex;
 
+
+}
 
 .projectsContainer{
     display: flex;
     overflow: hidden;
- 
+   
 }
 
+@media (max-width: 600px){
+    .projectsContainer{
+        margin-left: 200px;
+        margin-bottom: 100px;
+   
+    }
+}
