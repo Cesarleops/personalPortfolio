@@ -94,7 +94,7 @@
   .stackList{
     display: flex;
     flex-wrap: wrap;
-    max-width: 500px;
+    max-width: 100vw;
     gap: 40px;
     &--item{
       font-size: 30px;
