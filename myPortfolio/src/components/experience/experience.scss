@@ -1,6 +1,6 @@
 @import '../../variables.scss';
 .experienceContainer{
-
+  max-width: 95vw;
   &--title{
     color: $secondary_color;
     font-size: 40px;
@@ -65,10 +65,6 @@
 
 
 @media (max-width: 600px){
-  .experienceContainer{
-    width: 100vw;
-  
-  }
   .navList{
     max-width: 80vw;
 
