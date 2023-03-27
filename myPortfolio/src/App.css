@@ -10,7 +10,7 @@ html {
 body{
   box-sizing: border-box;
   margin: 0;
-  padding: 0;
+  padding: 15px;
   background-color: #0e2337;
   color: white;
   width: 100vw;
