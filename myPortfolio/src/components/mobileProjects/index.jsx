@@ -35,7 +35,7 @@ export const MobileProjects = () => {
     return(
         <div className='mobileContainer'>
             {Object.keys(myProjects).map((key,i)=> (
-                <ProjectsCard name={myProjects[key]["name"]} 
+                <ProjectsCard name={myProjects[key]["title"]} 
                               demo={myProjects[key]["demo"]}
                               gitHub={myProjects[key]["gitHub"]}
                               description={myProjects[key]["desc"]}
