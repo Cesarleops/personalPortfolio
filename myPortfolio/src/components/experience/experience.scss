@@ -65,12 +65,17 @@
 
 
 @media (max-width: 600px){
-  .navList{
-    max-width: 80vw;
-
+  .experienceContainer{
     display: flex;
     justify-content: center;
-  
+    align-items: center;
+    flex-direction: column;
+    &--title{
+      align-self: flex-start;
+    }
+  }
+  .navList{
+    max-width: 80vw;
   }
   .contents{
     display: flex;
