@@ -67,21 +67,33 @@
 @media (max-width: 600px){
   .experienceContainer{
     width: 100vw;
+  
+  }
+  .navList{
+    max-width: 80vw;
+
+    display: flex;
+    justify-content: center;
+  
   }
   .contents{
     display: flex;
     justify-content: center;
     height: 900px;
-    width: 70vw;
+    max-width: 100%;
+
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    padding: 30px;
+    padding: 37px;
     border-radius: 10px;
     margin-bottom: 130px;
     &--text{
       display: flex;
       gap: 20px;
-      max-width: 700px;
-      margin-bottom: 5px;
+      max-width: 90%;
+      font-size: 20px;
+      margin-bottom: 8px;
+
+
       &__icon{
           color: $secondary_color
   
@@ -112,10 +124,7 @@
   }
  
 
-.contents--text{
 
-font-size: 25px;
-}
 
   .tabList{
     font-size: 25px;

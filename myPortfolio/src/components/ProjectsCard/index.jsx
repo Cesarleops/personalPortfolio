@@ -10,9 +10,11 @@ export const ProjectsCard = ({name,tech,demo,gitHub,description}) => {
             <a href={demo}>
                 <BiPlay/>
             </a>
-            <a href={gitHub}>
+
+           { 
+                name !== "Umoob" ? <a href={gitHub}>
                 <AiFillGithub/>
-            </a>
+            </a> : null}
             </div>
             <ul className='projectCard--list'>
                 {tech.map((t, i)=> (
