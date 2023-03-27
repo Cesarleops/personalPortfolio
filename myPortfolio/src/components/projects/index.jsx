@@ -8,9 +8,7 @@ export const Projects = () => {
         <main className="projects"> 
             {
                 isMobile ?   
-                <section>
-                    <MobileProjects/>
-                </section>  :
+                    <MobileProjects/> :
                   <section className="projectsContainer">
                     <Carousel/>
                   </section>  
