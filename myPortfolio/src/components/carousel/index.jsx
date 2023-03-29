@@ -7,7 +7,7 @@ import './carousel.scss'
 const myProjects = {
     AllGames: {
           title: "AllGames",
-          desc: "It is a library where you can find information about any video game such as description, release date, reviews and more. You can see the most popular games as well as use filters to simplify your search.",
+          desc: "A non responsive library where you can find information about any video game such as description, release date, reviews and more. You can see the most popular games as well as use filters to simplify your search.",
           stack: ["Javascript", "React", "Redux", "CSS", "PostgreSql", "Express"],
           image: "",
           gitHub: "https://github.com/Cesarleops/PI-Videogames",

@@ -1,10 +1,11 @@
 import { ProjectsCard } from '../ProjectsCard'
+import { Fade } from '../fade'
 import './mobileProjects.scss'
 
 const myProjects = {
     AllGames: {
           title: "AllGames",
-          desc: "It is a library where you can find information about any video game such as description, release date, reviews and more. You can see the most popular games as well as use filters to simplify your search.",
+          desc: "A non-responsive library where you can find information about any video game such as description, release date, reviews and more. You can see the most popular games as well as use filters to simplify your search.",
           stack: ["Javascript", "React", "Redux", "CSS", "PostgreSql", "Express"],
           image: "",
           gitHub: "https://github.com/Cesarleops/PI-Videogames",
@@ -33,7 +34,8 @@ const myProjects = {
 export const MobileProjects = () => {
 
     return(
-        <div className='mobileContainer'>
+
+             <div className='mobileContainer'>
             {Object.keys(myProjects).map((key,i)=> (
                 <ProjectsCard name={myProjects[key]["title"]} 
                               demo={myProjects[key]["demo"]}
@@ -44,5 +46,7 @@ export const MobileProjects = () => {
                 />
             ))}
         </div>
+
+       
     )
 }
