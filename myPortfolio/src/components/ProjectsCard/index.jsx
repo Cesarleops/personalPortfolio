@@ -3,7 +3,7 @@ import {BiPlay} from 'react-icons/bi'
 import './projectsCard.scss'
 import { Carousel } from '../carousel'
 export const ProjectsCard = ({name,tech,demo,gitHub,description,images}) => {
-
+    const isMobile = window.innerWidth > 600
     return(
         <div className='projectCard'>
             <h4 className='projectCard--name'>{name}</h4>
@@ -24,11 +24,14 @@ export const ProjectsCard = ({name,tech,demo,gitHub,description,images}) => {
                 ))}
             </ul>
             <div className='projectCard--carousel'>
-            <Carousel>
+
+           { 
+               !isMobile &&  
+                <Carousel>
                 {images.map(e => (
                     <img key={e} src={`${e}`} alt='ilus' className='projectsCard--img'/>
                 ))}
-            </Carousel>
+            </Carousel>}
             </div>
             
         </div>
