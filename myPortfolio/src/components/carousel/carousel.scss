@@ -1,168 +1,35 @@
 @import '../../variables.scss';
-.carouselContainer{
-   position: relative;
-   
-   &--indicators{
-    display: flex;
-    justify-content: center;
-    gap: 10px;
-   }
-   
- 
 
- 
-}
-
-.slideShowContainer{
-    display: flex;
-    max-width: 600px;
-    transition: .3s ease all;
-    border-radius: 10px;
-    box-shadow: 0px 10px 15px -3px rgba(0,0,0,0.1);
-
-}
-
-.slide{
-    display: flex;
-    overflow: hidden;
-    flex-direction: column;
-    min-width: 100%;
+.carousel{
     position: relative;
+    display: flex;
     align-items: center;
-    z-index: 10;   
-    overflow: hidden;
-    transition: .3s ease all;
-    &--title{
-        display: flex;
-        justify-content: center;
-    }
-    &--desc{
-        max-width: 500px;
-    }
-    &--list{
-        display: flex;
-        gap: 10px;
-        color: $secondary_color;
-    }
-}
-
-.controls{
-    position: absolute;
-    top: 0;
-    z-index: 20;
-    pointer-events: none;
-    width: 100%;
-    height: 100%;
-   
-    &--left{
-        pointer-events: all;
-        background: none;
-        border: none;
-        cursor: pointer;
-        height: 79%;
-        left: 0;
-        position: absolute;
-        transition: .3s ease all;
-        color: $secondary_color;
-        &:hover{
-            background: rgba(0,0,0,.2);
-        }
-        svg{
-            height: 30px;
-            width: 30px;
-        }
-    }
-
-    &--right{
-        pointer-events: all;
-        color: $secondary_color;
-        background: none;
-        border: none;
-        height: 79%;
-        cursor: pointer;
-        right: 0;
-        position: absolute;
-        transition: .3s ease all;
-        &:hover{
-            background: rgba(0,0,0,.2);
-        }
-        svg{
-            width: 30px;
-            height: 30px;
-        }
-
-
-    }
-   
+    height: 320px;
+    width: 500px;
+     box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px;
     
-
-}
-
-.current{
-   color: $secondary_color;
-}
-
-
-.gitIcon{
-    position: absolute;
-    top: 30px;
-    right: 30px;
-    transition: .3s ease-in;
-    &--icon{
-        width: 30px;
-        height: 30px;
+    &--button{
+        position: absolute;
         color: $secondary_color;
-        &:hover{
-            color: white;
+        width: 33px;
+        height: 33px;
+        &.left{
+            left: 0;
+            top: 160px;
+        }
+
+        &.right{
+            top: 160px;
+            right: 0;
         }
     }
-   
-}
+    &--slides{
 
-.demoIcon{
-    position: absolute;
-    top: 30px;
-    right: 75px;
-    &--icon{
-        transition: .3s ease-in;
-        width: 30px;
-        height: 30px;
-        color: $secondary_color;
-        &:hover{
-            color: white;
+        img{
+            object-fit: contain;
+            border-radius: 20px;
+            width: 500px;
+            height: 320px;
         }
-    }
-   
-}
-
-@media (max-width: 600px){
-    .slide{
-        &--desc{
-            font-size: 25px;
-        }
-        &--title{
-            font-size: 35px;
-        }
-        &--list{
-            font-size: 20px;
-            color: $secondary_color;
-            flex-wrap: wrap;
-        }
-    }
-    .controls{
-        &--left{
-
-            &:hover{
-                background: none;
-           
-            }
-        }
-        &--right{
-            &:hover{
-
-                background: none;
-            }
-        }
-       
     }
 }

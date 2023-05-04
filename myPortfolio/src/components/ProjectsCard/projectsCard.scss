@@ -6,6 +6,17 @@
     margin-bottom: 40px;
     padding: 20px;
     border-radius: 10px;
+    &--carousel{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+  
+    }
+    &--img{
+        height: inherit;
+        width: inherit;
+        object-fit: contain;
+    }
     &--name{
         color: $secondary_color;
         font-weight: 400px;
