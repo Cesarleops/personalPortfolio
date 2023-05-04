@@ -1,12 +1,14 @@
 import { ProjectsCard } from '../ProjectsCard'
 import './mobileProjects.scss'
-
+import Hero from '../../../public/assets/firsts.png'
+import Two from '../../../public/assets/seconds.png'
+import Three from '../../../public/assets/thirds.png'
 const myProjects = {
     AdvancedSignUp: {
         title: "Sign Up form",
           desc: "A funny challenge from Front-End Mentor where you have to develop a responsive form for a games suscription with a stepper.",
           stack: ["Typescript", "React", "Scss"],
-          image: ["../../../public/assets/firsts.png", "../../../public/assets/seconds.png", "../../../public/assets/thirds.png",
+          image: [Hero, Two, Three,
                     "../../../public/assets/fo.png", "../../../public/assets/fifths.png", "../../../public/assets/six.png", "../../../public/assets/seven.png", "../../../public/assets/eight.png"],
           gitHub: "https://github.com/Cesarleops/advancedSignUp",
           demo: "https://neon-mousse-70d49d.netlify.app"
