@@ -3,7 +3,7 @@ import {BiPlay} from 'react-icons/bi'
 import './projectsCard.scss'
 import { Carousel } from '../carousel'
 export const ProjectsCard = ({name,tech,demo,gitHub,description,images}) => {
-    const isMobile = window.innerWidth > 600
+    const isMobile = window.innerWidth < 600
     return(
         <div className='projectCard'>
             <h4 className='projectCard--name'>{name}</h4>

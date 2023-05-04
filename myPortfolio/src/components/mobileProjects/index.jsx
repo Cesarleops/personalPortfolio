@@ -8,8 +8,8 @@ const myProjects = {
           stack: ["Typescript", "React", "Scss"],
           image: ["src/assets/firsts.png", "src/assets/seconds.png", "src/assets/thirds.png",
                     "src/assets/fo.png", "src/assets/fifths.png", "src/assets/six.png", "src/assets/seven.png", "src/assets/eight.png"],
-          gitHub: "https://github.com/Cesarleops/PI-Videogames",
-          demo: "https://pi-videogames-luh0u0eyu-cesarleops.vercel.app"
+          gitHub: "https://github.com/Cesarleops/advancedSignUp",
+          demo: "https://neon-mousse-70d49d.netlify.app"
     },
 
     AllGames: {
@@ -34,7 +34,7 @@ const myProjects = {
           title: "Umoob",
           desc: "Umoob is a business management app and a marketplace focused on the fitness industry. I've worked as a front-end developer in several development cycles ",
           stack: ["Typescript", "Python", "React", "Redux" ,"Sass", "Django"],
-          image: ["src/assets/imagen.png", "src/assets/umoob2.png", "src/assets/umoob3.png"],
+          image: ["/Users/cesarleyton/Desktop/personalPortfolio/myPortfolio/src/assets/imagen.png", "src/assets/umoob2.png", "src/assets/umoob3.png"],
           demo: "https://www.umoob.com/"
   
           }
