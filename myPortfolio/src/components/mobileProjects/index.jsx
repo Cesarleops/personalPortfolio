@@ -34,7 +34,7 @@ const myProjects = {
           title: "Umoob",
           desc: "Umoob is a business management app and a marketplace focused on the fitness industry. I've worked as a front-end developer in several development cycles ",
           stack: ["Typescript", "Python", "React", "Redux" ,"Sass", "Django"],
-          image: ["../../assets/imagen.png", "../../assets/umoob2.png", "../../assets/umoob3.png"],
+          image: ["https://cesarroom.netlify.app/src/assets/imagen.png", "https://cesarroom.netlify.app/src/assets/umoob2.png", "https://cesarroom.netlify.app/src/assets/umoob3.png"],
           demo: "https://www.umoob.com/"
   
           }
